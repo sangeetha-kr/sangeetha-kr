@@ -44,4 +44,19 @@ With expertise in **Flutter, Dart, Java, UI/UX Design, Firebase, MySQL, Figma, H
 💼 **LinkedIn**: [Sangeetha K R](https://www.linkedin.com/in/sangeetha-k-r/)  
 🚀 **GitHub**: *You’re already here!* 😃  
 
+📌 Let's Connect!
+🌐 Portfolio: Sangeetha's Portfolio
+📩 Email: sangeethakr.39bw@gmail.com
+💼 LinkedIn: Sangeetha K R
+🚀 GitHub: You’re already here! 😃
+
+✔ Designed a minimalist UI/UX with smooth animations
+
+📌 Let's Connect!
+🌐 Portfolio: Sangeetha's Portfolio
+📩 Email: sangeethakr.39bw@gmail.com
+💼 LinkedIn: Sangeetha K R
+🚀 GitHub: You’re already here! 😃
+
+
 ---
