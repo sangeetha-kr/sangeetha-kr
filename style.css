@@ -1,0 +1,387 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    --section-background-color: linear-gradient(
+      to bottom left,
+      rgba(23, 3, 70, 0.678),
+      rgba(1, 0, 7, 0.863)
+    );
+    --image-gradient: linear-gradient(
+      to bottom left,
+      rgba(23, 3, 70, 0.678),
+      rgba(1, 0, 7, 0.863)
+    );
+    --imp-text-color: #c770f0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0f0227;
+    color: #02042d;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Navigation Bar Styles */
+nav {
+    position: fixed;
+    right: 0;
+    top: 10px;
+    background: var(--section-background-color);
+    padding: 20px;
+    border-radius: 30px;
+  }
+  
+  nav ul {
+    text-align: right;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+    position: relative; /* Needed for the pseudo-element */
+  }
+  
+  nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li a i {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  nav ul li a:hover {
+    color: var(--imp-text-color); /* Color change on hover */
+  }
+  
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Position the line below the text */
+    left: 0;
+    width: 100%;
+    height: 3px; /* Thickness of the line */
+    background-color: var(--imp-text-color);
+    transform: scaleX(0); /* Initially, the line is not visible */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  nav ul li a:hover::after {
+    transform: scaleX(1); /* Make the line visible on hover */
+    transform-origin: bottom left;
+  }
+  
+  
+  /* Hero Section Styling */
+  /* Hero Section Styling */
+.hero {
+    display: flex;
+    font-size: 200%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    background: var(--image-gradient);
+  }
+  
+  .hero .for-name {
+    color:#8a40bf;
+  }
+  
+ 
+  /* Hero Section Styling */
+/* Hero Section Styling */
+
+  .hero .intro-text {
+    max-width: 500px;
+    margin-bottom: 12px;
+    margin-right: 40px; /* Add space between the text and the profile image */
+    color: #fff; /* Text color */
+    z-index: 2; /* Ensures text appears above the profile image */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .hero .profile-img {
+    max-width: 400px;
+    border-radius: 50%;
+    z-index: 1; /* Ensures the image stays behind the text */
+    margin-left: 20px; /* Adds space between image and text */
+  }
+  
+  /* Ensure the image stays on the right of the text */
+  .hero .profile-img-container {
+    border-color: #02042d;
+    position: relative;
+    display: flex;
+    margin-left: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px; /* Adjust spacing between image and text */
+  }
+  
+  #typewriter {
+  display: inline-block;
+  font-size: 35px;
+  font-weight: high;
+  color:#8a40bf;
+  border-right: 3px solid #8a40bf;  /* Create the typing cursor effect */
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0; /* Initial width of the text container */
+  animation: typing 4s steps(30) 1s infinite, blink 0.75s step-end infinite;
+}
+  
+  /* Animation for typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 13em;  /* Adjust based on the longest word */
+    }
+  }
+  
+  /* Animation for the blinking cursor */
+  @keyframes blink {
+    30% {
+      border-color: transparent;
+    }
+  }
+
+ 
+  
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 15px;
+  }
+  
+  .social-links a:hover {
+    color: var(--imp-text-color); /* Change color to purple on hover */
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .download-btn {
+    background-color: #8a40bf; /* Darker shade of purple */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+  }
+  
+  .download-btn:hover {
+    background-color: var(--imp-text-color); /* Main button color */
+
+  }
+  
+  /* Contact Me Button Styling */
+  .contact-btn {
+    display: inline-block;
+    background-color: #8a40bf; /* Darker shade of purple */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+    margin-right: 15px;
+  }
+  
+  .contact-btn:hover {
+    background-color: var(--imp-text-color); /* Main button color */
+  }
+  
+  /* About Me Section Styles */
+  .about {
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--imp-text-color); /* Heading color */
+  }
+  
+  .about p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .about p:nth-child(2) {
+    color: #170336; /* Body text color */
+  }
+  
+  .avatar {
+    margin-top: 20px;
+  }
+  
+  .avatar img {
+    max-width: 150px;
+    border-radius: 50%;
+  }
+  
+
+  .social-links {
+    align-items: center;
+  }
+  .social-links a {
+    font-size: 30px;
+    color: var(--imp-text-color); /* Default color */
+    margin: 0 15px;
+  }
+  
+  .social-links a:hover {
+    color: #fff; /* Change color to white on hover */
+  }
+  
+ /* Footer Section Styling */
+.footer {
+    padding: 50px 20px;
+    background: var(--section-background-color);
+  }
+  
+  .footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer .left-content {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+  }
+  
+  .footer .left-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: var(--imp-text-color);
+  }
+  
+  .footer .left-content p {
+    font-size: 18px;
+    color: #fff; /* Text color */
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .footer .right-content {
+    flex: 0 0 auto;
+  }
+  
+  .footer .avatar img {
+    max-width: 150px;
+    border-radius: 50%;
+  }
+  
+  /* Social Links Styling */
+  .social-links {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .social-links p {
+    font-size: 40px;
+    color: var(--imp-text-color);
+  }
+  
+  .social-links h4 {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .social-links .for-connect {
+    color:#8a40bf;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    font-size: 30px;
+    color: var(--imp-text-color);
+  }
+  
+  .social-icons a:hover {
+    color: #fff;
+  }
+  
+ 
+/*about me page*/
+
+/* Skillset Section */
+.skillset {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .card {
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card img {
+    max-width: 100px;
+    margin-bottom: 5px;
+  }
+  
+ 
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skillset h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+    color: var(--imp-text-color);
+  }
+
+  .tools h3{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+    color: var(--imp-text-color);
+
+  }
+  
