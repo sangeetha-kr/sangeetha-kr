@@ -29,7 +29,7 @@ Welcome to my GitHub space, where I transform ideas into functional and visually
 ✔ Designed a minimalist UI/UX with smooth animations
 
 📌 Let's Connect!
-🌐 Portfolio: [Your Portfolio Link]
+🌐 Portfolio: https://sangeetha-kr.github.io/sangeetha-kr
 📩 Email: sangeethakr.39bw@gmail.com
 💼 LinkedIn:https://www.linkedin.com/in/sangeetha-k-r/
 🚀 GitHub: You’re already here! 😃
