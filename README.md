@@ -2,7 +2,7 @@
 ### **Flutter Developer | Java Developer | UI/UX Designer**  
 
 Welcome to my **GitHub space**, where I transform ideas into **functional and visually stunning applications**!  
-With expertise in **Flutter, Dart, UI/UX Design, Firebase, MySQL, Figma, HTML, and CSS**, I specialize in building **high-performance cross-platform apps** that provide seamless user experiences.  
+With expertise in **Flutter, Dart, Java, UI/UX Design, Firebase, MySQL, Figma, HTML, and CSS**, I specialize in building **high-performance cross-platform apps** that provide seamless user experiences.  
 
 ---
 
